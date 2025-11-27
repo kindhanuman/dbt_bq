@@ -1,0 +1,14 @@
+dbt_to_bq:
+  outputs:
+    dev:
+      dataset: dbt_dataset
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: C:\Users\ragha\study_material\dbt_bq\.env\dbt-user-creds.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: learned-now-479411-j6
+      threads: 4
+      type: bigquery
+  target: dev

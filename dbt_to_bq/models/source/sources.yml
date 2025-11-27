@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: orders
+    database: learned-now-479411-j6  
+    schema: orders  
+    tables:
+      - name: dim_customer
+      - name: dim_date
+      - name: dim_product
+      - name: dim_store
+
+  - name: payments
+    database: learned-now-479411-j6  
+    schema: payments  
+    tables:
+      - name: fact_sales
+      - name: fact_returns
+
+
