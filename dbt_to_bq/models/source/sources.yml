@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: orders
-    database: learned-now-479411-j6  
+    database: '{{ target.project }}'
     schema: orders  
     tables:
       - name: dim_customer
@@ -12,7 +12,7 @@ sources:
       - name: items
 
   - name: payments
-    database: learned-now-479411-j6  
+    database: '{{ target.project }}'
     schema: payments  
     tables:
       - name: fact_sales

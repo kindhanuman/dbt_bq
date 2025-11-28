@@ -2,7 +2,7 @@ snapshots:
   - name: gold_items
     relation: ref('source_gold_items')
     config:
-      database: learned-now-479411-j6  
+      database: '{{ target.project }}' 
       schema: gold
       strategy: timestamp
       unique_key: id
