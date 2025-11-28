@@ -43,3 +43,8 @@ models:
       schema: gold
     example:
       +enabled: false
+
+
+seeds:
+  dbt_to_bq:
+    +schema: bronze

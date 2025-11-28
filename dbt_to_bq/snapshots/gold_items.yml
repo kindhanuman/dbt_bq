@@ -1,0 +1,10 @@
+snapshots:
+  - name: gold_items
+    relation: ref('source_gold_items')
+    config:
+      database: learned-now-479411-j6  
+      schema: gold
+      strategy: timestamp
+      unique_key: id
+      updated_at: updateDate
+      dbt_valid_to_current: "TIMESTAMP('9999-12-31')"
