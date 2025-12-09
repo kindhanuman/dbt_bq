@@ -39,7 +39,7 @@ jobs:
 
       - name: Write GCP key
         run: |
-          printf '%b' "${{ secrets.GCP_SA_KEY }}" > $HOME/gcp-key.json
+            echo "${{ secrets.GCP_SA_KEY }}" | base64 --decode > $HOME/gcp-key.json
 
       - name: Force DBT_PROFILES_DIR
         run: echo "DBT_PROFILES_DIR=$HOME/.dbt" >> $GITHUB_ENV
